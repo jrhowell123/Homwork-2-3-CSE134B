@@ -4,28 +4,54 @@
         <meta charset="utf-8">
         <title>  personal portfolio and recruitment site</title>
         <link href="Images/botanic_plant_leaf_icon_233211.ico" rel="icon">
+        <Style>
+            .flex-header{
+                background-color: rgb(255, 30, 30);
+            }
+            .flex1{
+                display: flex;
+                justify-content: center;
+                justify-content: space-evenly;
+            }
+            .flex-main{
+                background-color: rgb(30, 255, 146);
+            }
+            .flex2{
+                display: flex;
+                justify-content: center;
+                justify-content: space-evenly;
+            }
+            .flex-footer{
+                background-color: rgb(86, 30, 255); 
+            }
+            .flex3{
+                display: flex;
+                justify-content: center;
+                justify-content: space-evenly;
+            }
+        </Style>
     </head>
     <body>
-        <header>
-            <h1>
+        <header class = "flex-header">
+            <h1 class="flex1">
                 <strong>Hompage</strong>
             </h1>
-            <h2>Where are you looking to go</h2>
-                <nav>
-                   <a href="JohnHowellPersonalPortfolio/ContactSupport.html">Contact Support</a><br>
-                   <a href="JohnHowellPersonalPortfolio/Resume.html">Resume</a><br>
-                   <a href="JohnHowellPersonalPortfolio/Projects.html">Projects</a><br> 
+            <h2 class="flex1">Where are you looking to go</h2>
+                <nav class="flex1">
+                   <a href="JohnHowellPersonalPortfolio/ContactSupport.html">Contact Support</a>
+                   <a href="JohnHowellPersonalPortfolio/Resume.html">Resume</a>
+                   <a href="JohnHowellPersonalPortfolio/Projects.html">Projects</a> 
                 </nav>
         </header>
-        <Main>
-            <b>About Me!</b><br>
-            <picture>
+        <Main class="flex-main">
+            <p class="flex2"><b>About Me!</b></p><br>
+            <picture class="flex2">
                 <img src="Images/persona.png" alt="persona diagram" height="430" width="700">
             </picture>
         </Main>
         <hr>
-        <footer>
-            <div>John Howell UCSD</div>
+        <footer class="flex-footer">
+                <div class ="flex3"> John Howell UCSD</div>
         </footer>
     </body>
 </html>
