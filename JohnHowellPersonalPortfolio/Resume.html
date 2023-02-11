@@ -1,37 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
     <style>
-    h1 {
+    h2 {
         border-style: dotted;
     }
-    </style>
+    .bgcolor{
+        background-color: deepskyblue;
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+    .row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
 
+    </style>
     <head>
         <meta charset="utf-8">
         <title>  personal portfolio and recruitment site</title>
         <link href="../Images/botanic_plant_leaf_icon_233211.ico" rel="icon">
     </head>
-    <body>
-        <header>Resume</header> 
+    <body class="bgcolor">
+        <header>
+            <h1 class = "center">Resume</h1>
+        </header> 
         <picture>
             <img src="../Images/resume1.png" alt="persona diagram" height="430" width="700">
             <img src="../Images/resume2.png" alt="persona diagram" height="430" width="700">
         </picture>
-        <main>
-            <h1>Resume Feedback</h1>
-            <form>
-                <textarea cols="50">Be Kind!</textarea>
-                <br>
-                <input type="submit" value="Submit">
-            </form>
-            <details>
-                <summary>linkedin</summary>
-                <p>This Site will give an overview of of my connections and past experience.</p>
-            </details>
-            <iframe src="https://www.linkedin.com/" title="linkedin"></iframe>
-        </main>
-        <footer>
-            <button type="button" onclick="alert('How did you like my resume?')">Click Me!</button>
-        </footer>
+            <main>
+                <h2 class="center">Resume Feedback</h2>
+                <div class="row">
+                    <form>
+                        <textarea cols="50">Be Kind!</textarea>
+                        <br>
+                        <input type="submit" value="Submit">
+                    </form>
+                    <details>
+                        <summary>linkedin</summary>
+                        <p>This Site will give an overview of of my connections and past experience.</p>
+                    </details>
+                    <iframe src="https://www.linkedin.com/" title="linkedin"></iframe>
+                    <button type="button" onclick="alert('How did you like my resume?')">Click Me!</button>
+                </div>
+            </main>
+            <footer>
+            </footer>
     </body>
 </html>
