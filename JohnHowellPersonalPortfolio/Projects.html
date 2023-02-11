@@ -5,14 +5,42 @@
         <title>  personal portfolio and recruitment site</title>
         <link href="../Images/botanic_plant_leaf_icon_233211.ico" rel="icon">
         <style>
-            .test{
-                display: flex;
-                justify-content: center;   
+            body {
+                display: grid;
+                place-items: center;
+                grid-template-rows: auto 1fr auto;
+            }
+
+            header {
+                background-color: lightgray;
+                padding: 1rem;
+                text-align: center;
+            }
+
+            li {
+                list-style-type: none;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+
+            main {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 1rem;
+            }
+
+            section {
+                background-color: lightblue;
+                padding: 1rem;
+            }
+
+            section:nth-of-type(2) {
+                background-color: lightgreen;
             }
         </style>
     </head>
     <body>
-       <header class="test"><h1>Projects</h1></header>
+       <header><h1>Projects</h1></header>
        <li>
             <a href=https://63d85e091e6d4e000829a071--animated-youtiao-53e50a.netlify.app> Back to Homepage</a><br>
        </li>    
